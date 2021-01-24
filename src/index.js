@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-const myfirstelement = <h1>Hello React!</h1>
-ReactDOM.render(
-  myfirstelement,
-  document.getElementById('root')
-);
+import App from './App'
+import {useState} from 'react'
+import Appbar from './components/Appbar'
+import Button from './components/Button'
+const Ob= ()=>{
+    // const [color,setColor]=useState('blue');
+    var [isTrue,setBool]=useState('true');
+    return(
+        <>
+        <Appbar></Appbar>
+        
+        <div style={{backgroundColor: (isTrue && 'blue') || (!isTrue && 'green') }}>
+        <App 
+        
+        //colorBox={{color: color}}
+        
+        />
+        </div>
+        <button style={{borderWidth : 0, backgroundColor: 'white'}} onClick={()=>setBool(!isTrue)}><Button></Button></button>
+        
+        </>
+    );
+}
+ReactDOM.render(<Ob />,document.getElementById('root'))
+ 
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

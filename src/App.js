@@ -1,21 +1,12 @@
-//import logo from './logo.svg';
-//import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1>Hello World!</h1>
-//     </div>
-//   );
-// }
-import React, { Component } from 'react';
-class App extends Component {
-    render() {
-      return(
-      <div className="App">
-        <h1>Hello World!</h1>
-      </div>
-      );
-    }
+import React from 'react';
+// import ReactDOM from 'react-dom';
+const  App=() =>{
+  //const {color}=props.colorBox;
+  return (
+  <div className='App'>
+    <h1 className='a'>Nghịch xí thôi</h1>
+  </div>
+  );
 }
+  
 export default App;
