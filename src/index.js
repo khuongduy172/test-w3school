@@ -9,17 +9,17 @@ const Ob= ()=>{
     var [isTrue,setBool]=useState('true');
     return(
         <>
-        <Appbar></Appbar>
+        <Appbar>
         
-        <div style={{backgroundColor: (isTrue && 'blue') || (!isTrue && 'green') }}>
+        <div style={{backgroundColor: (isTrue && 'white') || (!isTrue && 'green') }}>
         <App 
         
         //colorBox={{color: color}}
         
         />
         </div>
-        <button style={{borderWidth : 0, backgroundColor: 'white'}} onClick={()=>setBool(!isTrue)}><Button></Button></button>
-        
+        <button style={{borderWidth : 0, backgroundColor: 'blue'}} onClick={()=>setBool(!isTrue)}><Button></Button></button>
+        </Appbar>
         </>
     );
 }
